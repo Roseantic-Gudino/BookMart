@@ -10,7 +10,7 @@ namespace BookMart.Services
     {
         private readonly HttpClient _httpClient = new HttpClient();
         private readonly string _url = "https://bookmart-c2m2.onrender.com/"; // 🔁 Replace with your deployed site URL
-        private readonly TimeSpan _interval = TimeSpan.FromSeconds(30); // ⏱️ every 30 seconds
+        private readonly TimeSpan _interval = TimeSpan.FromHours(16);
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
